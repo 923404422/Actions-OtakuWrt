@@ -10,6 +10,13 @@
 name: Build OpenWrt-X86
 
 on:
+  #自动编译：每天早上3点
+  schedule:
+    - cron: 0 19 * * *
+  #手动编译
+  workflow_dispatch:
+
+on:
   repository_dispatch:
   workflow_dispatch:
     inputs:
