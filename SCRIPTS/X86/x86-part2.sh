@@ -29,8 +29,6 @@ git clone -b master --depth=1 https://github.com/QiuSimons/openwrt-mos ./package
 # adguardhome
 git clone -b packages --depth=1 https://github.com/kongfl888/luci-app-adguardhome.git ./package/lean/adguardhome_package
 git clone -b luci --depth=1 https://github.com/kongfl888/luci-app-adguardhome.git ./package/lean/adguardhome
-cp -rf ./package/lean/adguardhome_package/* ./package/lean/adguardhome
-rm -rf ./package/lean/adguardhome_package
 # Theme Argon
 rm -rf ./package/feeds/luci/luci-theme-argon
 git clone -b 18.06 --depth=1 https://github.com/jerrykuku/luci-theme-argon.git ./package/lean/luci-theme-argon
